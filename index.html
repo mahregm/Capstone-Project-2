@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project 2</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container1 {
+            background-color: #331D2C;
+            position: relative;
+            padding-top: 100px;
+            height: 620px;
+            width: 100%;
+        }
+        span {
+            text-decoration: underline;
+        }
+
+        .image-bottom{
+            position: relative;
+            top: 140px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 4rem;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        
+        .image1 {
+            position: absolute;
+            top: 40px;
+            right: 250px;
+        }
+        .image2 {
+            position: absolute;
+            left: 250px;
+            top: 350px;
+        }
+        .image3 {
+            position: relative;
+            left: 400px;
+        }
+
+        .text{
+            position: relative;
+            top: 60px;
+            bottom: 30px;
+        }
+
+        hr {
+            
+            border: dotted #3F2E3E 6px;
+            border-bottom: none;
+            width: 1%;
+            margin: 1px auto;
+        }
+        .middle-container {
+            background-color: #3F2E3E;
+            position: relative;
+            width: 100%;
+            height: 450px;
+        }
+        .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+        .image4 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+
+        }
+
+        .heading{
+            margin-top: 10px;
+        }
+
+        .intro{
+            margin-top: 10px;
+            color: white;
+            
+        }
+
+        .skills-container {
+            background-color: #A78295;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image5 {
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .image6 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+       .design{
+            position: relative;
+            margin-top: 20px;
+       }
+
+       .design > p{
+            position: relative;
+            top: 40px;
+            left: 20px;
+       }
+       .design > h3{
+            position: relative;
+            top:30px;
+            left: 20px;
+       }
+
+        .hot-wing {
+            position: relative;
+            margin-top: 20px;
+            left: -140px;
+            bottom: 30px;
+        }
+        .image5, .image6{
+            float: left;
+        }
+        .hot-wing > p{
+            position: relative;
+            top: 40px;
+            left: 20px;
+            
+       }
+       .hot-wing> h3{
+            position: relative;
+            top:30px;
+            left: 20px;
+       }
+
+       .skills{
+            position: relative;
+            top:25px;
+       }
+
+       .bottom-container{
+        background-color: #EFE1D1;
+        padding-top: 20px;
+       }
+       .baba{
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 1.5rem;
+       }
+       .mummy{
+        text-align: center;
+        margin-top: 15px;
+       }
+       .button{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: large;
+       }
+
+       .btn {
+        background: #11cdd4;
+        background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+        background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+    }
+
+    .last-container {
+        background-color: #66bfbf;
+        padding: 60px 0 30px;
+        text-align: center;
+    }
+
+    .copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+    }
+
+    a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: #eaf6f6;
+    }
+
+    .copyright{
+        font-size: 1rem;
+    }
+
+
+/* Responsive styles for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container1,
+  .image-bottom {
+    padding-top: 50px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .image1,
+  .image2 {
+    display: none;
+  }
+  
+  .image3 {
+    left: 200px;
+  }
+  
+  .image4 {
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .skills-container {
+    padding-bottom: 20px;
+  }
+  
+  .baba {
+    font-size: 1.5rem;
+  }
+  
+  .mummy {
+    margin-top: 15px;
+  }
+  
+  .button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container1"> 
+        <img class="image1" src="./images/cloud.png" alt="image of a cloud"/>   
+        <div class="text">
+            <h1> I'm Mahesh Regmi</h1>
+            <h2> A <span> Web</span> Developer</h2>
+        </div>
+        <img class="image2" src="./images/cloud.png" alt="image of a cloud"/>
+        <div class="image-bottom">
+            <img class="image3" src="./images/mountain.png" alt="image of a mountain"/> 
+        </div>          
+    </div>
+  
+    <div class="middle-container">
+        <div class="profile">
+            <img class="image4" src="./images/307575756_1695605974151573_9173614648422023004_n.jpg" alt="image of mahesh"/>
+            <h2 class="heading">How you doin'?</h2>
+            <p class="intro">I am an iOS and Web Developer.<br> I love to code and make new projects.<br> I ❤️ playing cricket after drinking beers.</p>
+        </div>
+    </div>
+    
+    <div class="skills-container">
+        <div class="skills">
+            <h2>My Skills</h2> 
+        </div>
+          
+        <div class="design">
+            <img class="image5" src="./images/cat-typing.gif" alt="image of a cat typing"/>
+            <h3> Design and Development</h3>
+            <p>I started learning to code when I was 19 years old<br> because I wanted to make my own video games. <br>Over time, I am gaining some  experience on designing and developing mobile and web applications. <br/> I practice from udemy. I'm also taking software development on college.</p>
+        </div>
+        <div class="hot-wing">
+            <img class="image6" src="./images/istockphoto-531861190-612x612.jpg" alt="image of a hot chilly"/>
+            <h3>Hot Wing Challenge</h3>
+            <p> One of my greatest strengths as a software developer<br/> is my ability to solve complex problems. I thrive on challenges<br> and enjoy breaking down problems into smaller, <br>manageable tasks to develop efficient and scalable solutions.</p>
+        </div>  
+    </div>
+
+    <div class="bottom-container">
+        <h2>Get In Touch</h2>
+        <p></p>
+        <h3 class="baba">Let's Connect</h3>
+        <p class="mummy">Interested in discussing software development and exploring innovative ideas?<br/> Feel free to reach out, and let's collaborate on exciting projects together!</p>
+        <div class="button">
+            <a class="btn" href="mailto:regmimahesh47@gmail.com">CONTACT ME</a>
+        </div>      
+    </div>
+
+    <div class="last-container">
+        <a class="footer-link" href="https://www.facebook.com/mahesh.regmi.988/">Facebook</a>
+        <a class="footer-link" href="https://www.instagram.com/mahesh_regmee17/">Instagram</a>
+        <a class="footer-link" href="https://www.facebook.com/mahesh.regmi.988/">LinkedIn</a>
+        <p class="copyright">© Mahesh Regmi @ Mahesh17.</p>
+    </div>
+
+</body>
+</html>
